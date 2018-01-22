@@ -5,7 +5,7 @@ var MongoClient = require('mongodb').MongoClient;
 var dburl = "mongodb://adminwormvijaicv:Krish%401997@bookworm-shard-00-00-b3joy.mongodb.net:27017,bookworm-shard-00-01-b3joy.mongodb.net:27017,bookworm-shard-00-02-b3joy.mongodb.net:27017/test?ssl=true&replicaSet=bookworm-shard-0&authSource=admin"
 var bodyparser = require('body-parser');
 var validator = require('validator');
-var bcrypt = require('bcrypt-nodejs');
+var bcrypt = require('bcrypt');
 var db;
 app.use(express.json());
 app.use(express.static('build'));
