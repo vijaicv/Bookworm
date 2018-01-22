@@ -16,7 +16,6 @@
     "nodemon": "^1.14.11",
     "validator": "^9.2.0"
   },
-
   "engines": {
     "node": "6.11.4"
   }
