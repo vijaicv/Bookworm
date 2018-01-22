@@ -3,15 +3,12 @@
   "version": "1.0.0",
   "description": "server for bookworm webapp",
   "main": "index.js",
-
   "scripts": {
-    "test": "node main.js",
-    "start":"node index.js"
+    "test": "node main.js"
   },
   "author": "vijaicv",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^1.0.3",
     "express": "^4.16.2",
     "mongodb": "^3.0.1",
     "nodemon": "^1.14.11",
