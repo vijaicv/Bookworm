@@ -13,10 +13,10 @@
     "bcrypt": "^1.0.3",
     "express": "^4.16.2",
     "mongodb": "^3.0.1",
-    "nodemon": "^1.14.11",
     "validator": "^9.2.0"
   },
   "engines": {
-    "node": "6.11.4"
+    "node": "6.11.4",
+    "npm": "5.6.0"
   }
 }
