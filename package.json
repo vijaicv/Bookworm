@@ -4,8 +4,7 @@
   "description": "server for bookworm webapp",
   "main": "index.js",
   "scripts": {
-    "test": "node main.js",
-    "start":"node index.js"
+    "test": "node main.js"
   },
   "author": "vijaicv",
   "license": "ISC",
