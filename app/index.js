@@ -2,7 +2,7 @@ var express = require('express');
 var path=require('path');
 var app = express();
 var MongoClient = require('mongodb').MongoClient;
-var dburl = process.env.DB;
+var dburl = "mongodb://adminwormvijaicv:Krish%401997@bookworm-shard-00-00-b3joy.mongodb.net:27017,bookworm-shard-00-01-b3joy.mongodb.net:27017,bookworm-shard-00-02-b3joy.mongodb.net:27017/test?ssl=true&replicaSet=bookworm-shard-0&authSource=admin";
 var bodyparser = require('body-parser');
 var validator = require('validator');
 var bcrypt = require('bcrypt');
@@ -238,6 +238,10 @@ app.post("/booklstof",function(req,resp){
                 }  
                 resp.json({ available: true,bklst:data[0].books });
         })
+})
+
+app.get('/pass_res',function(req,res){
+        res.sendFile(path.join(__dirname+"/fpass.html"));
 })
 var server = app.listen(process.env.PORT, function () {
         var host = server.address().address
