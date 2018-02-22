@@ -1,0 +1,54 @@
+#wallpaper{
+    height: 100vh;
+    top:0;
+    width: 100vw;
+}
+
+#backblur{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: rgba(0, 0, 0, 0.158);
+    z-index: 2009;
+}
+
+#fab{
+    position: fixed;
+    float: left;
+    z-index: 2000;
+    border: none;
+    border-radius: 50%;
+    padding: 13px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    background: #f85380;
+    box-shadow: 0 0 20px 1px black;
+    -webkit-animation-name: blink 500ms;
+}
+
+@keyframes blink{
+    0%{transform: translate(0px,5px);background: blue}
+    50%{transform: translate(0px,-2px);background:red}
+    100%{transform: translate(0px,0px);background:green}
+  }
+
+#fab:focus{
+    outline: none;
+}
+
+#fab:hover {
+    -webkit-animation: out 500ms;
+}
+
+@-webkit-keyframes in {
+    from   { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@-webkit-keyframes out {
+    0%   { -webkit-transform: rotate(360deg); }
+    100% { -webkit-transform: rotate(0deg); }
+}

@@ -1,0 +1,76 @@
+#container{
+    top:0;
+    bottom:0;
+    margin:0 auto;
+    position: fixed;
+    z-index: 2000;
+    width: 30%;
+    height: 100vh;
+    background: #191616;
+    animation-name: animexpand;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes animexpand{
+    0%{width:0%}
+    80%{width:40%}
+    100%{width:30%}
+}
+
+#title{
+    padding: 10px;
+    color: white;
+    animation-name: animexpand;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+#friendssearch{
+    padding:10px;
+    width:90%;
+    margin:10px;
+    border-radius: 8px;
+    border:1px solid grey;
+    animation-name: fadein;
+    animation-duration: 500ms;
+    animation-delay: 100ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: backwards;
+    background-image: url("http://www.clker.com/cliparts/w/r/Q/0/x/D/search-icon-light-grey.svg");
+    background-position: right;
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+#friendssearch:focus{
+    outline:none;
+}
+@keyframes fadein{
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+
+#followingtag{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    color: #60fd60;
+    font-weight: bold;
+    animation-name: fadein;
+    animation-duration: 500ms;
+    animation-delay: 100ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: backwards;
+}
+
+@media only screen and (max-width: 700px) {
+    #friendssearch{
+        width:20%
+    }
+    #container{
+        width: 20%;
+        height: 100%;
+    }
+    
+}

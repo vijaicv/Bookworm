@@ -1,0 +1,40 @@
+#person{
+padding:10px;
+padding-left: 20px;
+display:grid;
+grid-template-columns: 75% 25%;
+grid-template-rows: 29px;
+margin-bottom:20px;
+animation-name: fadein;
+    animation-duration: 500ms;
+    animation-delay: 100ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: backwards;
+}
+
+
+#follow{
+ float:right;
+ border:none;
+ border-radius:5px;
+ padding:5px;
+ background: blue;
+ color: white;
+ grid-area:1/2/2/3;
+}
+
+#un{
+    color: white;
+    margin: 5px;
+}
+#un:hover{
+    cursor: pointer;
+}
+
+#mail{
+    color: #a2a2a2;
+    padding: 5px;
+}
+#mail:hover{
+    cursor: pointer;
+}

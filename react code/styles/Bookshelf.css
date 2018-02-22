@@ -1,0 +1,20 @@
+#bookshelf{
+    width:100vw;
+    height:600px;
+    position: absolute;
+}
+
+#grid{
+    display: grid;
+    width: 95%;
+    padding-top: 45px;
+    padding-left: 45px;
+    z-index: 60;
+    grid-gap: 18px;
+    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
+}
+
+#grid_container{
+    height: 450px;
+    overflow-y: scroll;
+  }

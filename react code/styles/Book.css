@@ -1,0 +1,43 @@
+#bookcover{
+  width: 120px;
+  height: 130px;
+  position: absolute;
+}
+
+#thumbnail{
+  position: absolute;
+  z-index: 10;
+  transform:skew(0deg,6deg)translate(0px,8px)rotateY(20deg);
+  width: 75px;
+  height: 115px;
+}
+
+#eachbook{
+    min-width: 200px;
+    max-width:300px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#eachbook:hover{
+    border: 2px solid blue;
+}
+
+#bk_title{
+    width: 100px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#bk_author{
+    width: 100px;
+    text-align: left;
+}
+
+#textdata{
+    float: right;
+    width: 150px;
+    padding: 5px;
+    overflow-y: auto;
+}

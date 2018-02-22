@@ -1,0 +1,51 @@
+#booklistbox{
+    position: absolute;
+    z-index: 2001;
+    right:30px;
+    width:60%;
+    height:500px;
+    background: white;
+    top: 50px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 1px black;
+    text-align: center;
+    overflow-y: auto;
+    animation-name: animbounce;
+    animation-duration: 500ms;
+    animation-delay: 100ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: backwards;
+}
+
+@keyframes animbounce{
+    0%{width:10%;opacity: 0}
+    80%{width:62%;opacity: 1}
+    100%{width:60%;opacity: 1}
+}
+
+#instruction{
+    font-size: 8px;
+}
+
+#showbooksbtn{
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    background: #0000ff;
+    color: white;
+    font-weight: bold;
+}
+
+#emailtag{
+    font-weight:bold;
+    padding:10px;
+}
+
+@media only screen and (max-width: 700px) {
+   #booklistbox{
+       width: 30%;
+       height:200px;
+   }
+    
+}

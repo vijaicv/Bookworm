@@ -1,0 +1,182 @@
+hr{
+  width:60px; 
+}  
+
+#forgot{
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+}
+.field{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    animation-name: widenfield;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: widenfield;
+    -webkit-animation-duration: 500ms;
+    -webkit-animation-fill-mode: forwards;
+
+}
+
+@keyframes widenfield {
+  0%{width: 0%;opacity:0}
+  80%{width:60%;opacity:1}
+  100%{width: 50%;opacity:1}
+}
+
+.blinkassign{
+    animation-name: blink;
+    animation-duration: 800ms;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: blink;
+    -webkit-animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes blink{
+  0%{transform: translate(0px,5px);background: blue}
+  50%{transform: translate(0px,-2px);background:red}
+  100%{transform: translate(0px,0px);background:green}
+}
+
+#continuebtn{
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  background: #3f51b5;
+}
+
+#loading_screen{
+  width: 80%;
+  border-radius: 15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 150px;
+  background: white;
+  z-index: 500;
+  position: absolute;
+  text-align: center;
+  padding:20px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#loading_gif{
+  display: block;
+  margin: auto;
+  width: 100px;
+}
+
+#ready{
+  color:green;
+}
+
+#login_box{
+  width: 80%;
+  margin:30px;
+  color: white;
+  text-align: center;
+  padding-top: 85px;
+  border-radius: 10px;
+  background: #363545;
+  height: 400px;
+  box-shadow: 0px 0px 19px 1px black;
+  grid-area: 2/1/3/2;
+}
+
+#loginbtn{
+background-color: blue;
+border: none;
+color: white;
+font-weight: bolder;
+padding: 10px;
+border-radius: 11px;
+padding-left: 30px;
+padding-right: 30px;
+}
+#loginbtn:hover{
+  background-color: green;
+}
+
+#greeting{
+  color: #f9f9f9;
+  width: 100%;
+  text-align: center;
+  background: #1565c0;
+  box-shadow: 0px 1px 20px 5px #353535;
+    top: 0;
+    margin: 0;
+    padding: 20px;
+    box-shadow: 0px 4px 0 0px #353535;
+    grid-area:1/1/2/3;
+}
+
+#signup_container{
+    right:0;
+    color: white;
+    text-align: center;
+    height: 450px;
+    padding-top: 30px;
+    width: 80%;
+    margin: 30px;
+    border-radius: 12px;
+    background: #363545;
+    box-shadow: 0px 0px 19px 1px black;
+    grid-area: 2/2/3/3;
+}
+
+#signupbtn{
+background-color: blue;
+border: none;
+color: white;
+font-weight: bolder;
+padding: 10px;
+border-radius: 11px;
+padding-left: 30px;
+padding-right: 30px;
+}
+
+
+
+#screen{
+  width: 100%;
+  height:100%;
+  background: #3EDE91;  
+  background-size: cover;
+  position: fixed; 
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 9fr;
+}
+.anim-appear{
+  opacity: 0.01;
+}
+
+.anim-appear.anim-appear-active{
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+@media only screen and (max-width: 700px) {
+  #screen{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 4fr 4fr;
+      grid-row-gap: 10px;
+      overflow-y: auto;
+
+  }
+  #signup_container{
+    grid-area: 3/1/4/2;
+  }
+  
+}

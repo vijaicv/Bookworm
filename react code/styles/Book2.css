@@ -1,0 +1,16 @@
+
+
+  #thumbnail2{
+    z-index: 8;
+    transform:skew(0deg,-4deg)translate(10px,9px)rotateY(20deg);
+    width: 77px;
+    height: 105px;
+  }
+  
+  #eachbook2{
+      padding: 5px;
+      border-radius: 10px;
+  }
+  #eachbook2:hover{
+      border: 2px solid blue;
+  }

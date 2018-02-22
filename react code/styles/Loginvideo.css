@@ -1,0 +1,14 @@
+#intro{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+#spaceforbox{
+    position: absolute;
+    z-index: 10;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+}
